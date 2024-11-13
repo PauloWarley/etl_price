@@ -5,5 +5,6 @@ ExtractContract = namedtuple(
     '''
         raw_info
         extraction_date
+        url
     '''
 )

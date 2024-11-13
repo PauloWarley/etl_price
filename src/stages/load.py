@@ -10,7 +10,7 @@ class LoadData:
 
     def save_to_excel(self):
         try:
-            df = pd.DataFrame([self.data]) #criando dataframe
+            df = pd.DataFrame().from_dict(self.data.load_content) #criando dataframe
 
             try: #tenta carregar dados existentes e novos
                 existing_data = pd.read_excel(self.filepath)
