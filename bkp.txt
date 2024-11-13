@@ -1,0 +1,108 @@
+import requests
+from selenium import webdriver
+
+url = "https://www.adicel.com.br/aditivos"
+
+class GetPageFromUrl():
+    
+    def __init__(self) -> None:
+        self.user_agent = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"}
+    
+    def fetch_page(self, url):
+        # Lets bora de requests...
+        try:
+            response = requests.get(url, headers=self.user_agent)
+            response.raise_for_status()  # Levanta uma exceção pra quando der ruim no HTTP
+            print("Conteúdo obtido com requests.")
+            return response.text
+        except requests.exceptions.RequestException as e:
+            print(f"Requests falhou: {e}. Tentando com Selenium...")
+            # Partiu selenium que o requests foi de vasco (F no chat)
+            return self.from_selenium(url)
+    
+    def from_selenium(self, url):
+        # Tá saindo da jaula o monstro!!!!
+        driver = webdriver.Chrome()
+        driver.get(url)
+        page_source = driver.page_source
+        print("Conteúdo obtido com Selenium.")
+        driver.quit()  # selenium leave server kkkkk
+        return page_source
+---------------------------------------------------------------------------------------------------------------------------------
+
+from typing import List, Dict
+from bs4 import BeautifulSoup
+
+class GetElementByXpath ():
+    
+    def init(self) -> None:
+        pass
+
+    def get_from_html(self, html: str) -> List[Dict[str, str]]:
+        soup = BeautifulSoup(html, "html.parser")
+        
+        product_name_list = soup.find(class_="item flex")
+        product_name_list_items = product_name_list_items.find_all('a')
+
+        essential_information = []
+        for product_name in product_name_list_items:
+            names = product_name.contents[0]
+            links = "https://www.adicel.com.br/" + product_name.get('href')
+            essential_information.append({
+                "name": names,
+                "link": links
+            })
+
+        return essential_information
+---------------------------------------------------------------------------------------------------------------------------------
+
+from ETL_Price.src.drivers.get_page import GetPageFromUrl
+from ETL_Price.src.drivers.get_element import GetElementByXpath
+
+class Main:
+    
+    def __init__(self, get_page: GetPageFromUrl, get_element: GetElementByXpath) -> None:
+        self.__get_page = get_page
+        self.__get_element = get_element
+    
+    def run_main(self) -> None:
+        url = ("https://www.adicel.com.br/aditivos")
+
+    #Comandos VICT.ignore
+
+    #for iten in get_from_html:
+        #print(f"Nome do produto: {item["product_name"]}, Preco: {item["price_item"]}")
+
+
+    #html_content = self.__get_page.fetch_page(url)
+    #extracted_data = self.__get_element.get_from_html(html_content)
+    
+    #for item in extracted_data:
+            #print(f"Product Name: {item['product_name']}, Price: {item['price']}")
+
+ 
+    #url = "https://www.adicel.com.br/aditivos"
+    
+    #page_from_url = GetPageFromUrl()
+
+    #html = page_from_url.from_requests("google.com")
+
+    #element_by_xpath = get_element_by_xpath()
+
+    #element_by_xpath.get_from_html(html, ".//div")
+
+-------------------------------------------------------dhfjhfljhljhlkjhlzjhlzh------------------
+
+        product_name_list = soup.find(class_="fixed-info")
+        product_name_list_items = product_name_list_items.find_all('product-name')
+
+        essential_information = [] #Em teoria, pega a célula inteira (fixed-info) para ser filtrada
+        for product_name in product_name_list_items:
+            names = product_name.contents[0]
+            links = "https://www.adicel.com.br/antioxidantes/antioxidante-bass-anti-ranco-1kg" + product_name.get('href')
+            essential_information.append({
+                "name": names,
+                "link": links
+            })
+
+        return essential_information

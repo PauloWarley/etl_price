@@ -1,0 +1,55 @@
+{
+    "categories": {
+        "aditivos alimentares": [
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=1",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=2",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=3",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=4",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=5",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=6",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=7",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=8",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=9",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=10",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=11",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=12",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=13",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=1&pg=14"
+        ],
+        "amidos e farinhas": [
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=21&pg=1",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=21&pg=2"
+        ],
+        "aromas": [
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=11&pg=4",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=11&pg=4",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=11&pg=4"
+        ],
+        "cacau/chocolates": [
+            "https://www.adicel.com.br/cacau-chocolates"
+        ],
+        "condimentos e temperos": [
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=61&pg=1",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=61&pg=2",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=61&pg=3",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=61&pg=4"
+        ],
+        "corantes": [
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=17&pg=1",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=17&pg=2"
+        ],
+        "lecitinas e emulsificantes": [
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=7&pg=1",
+            "https://www.adicel.com.br/loja/catalogo.php?loja=755044&categoria=7&pg=2"
+        ],
+        "proteinas": [
+            "https://www.adicel.com.br/proteinas"
+        ],
+        "suplementos": [
+            "https://www.adicel.com.br/suplementos"
+        ],
+        "acucares e dextrinas": [
+            "https://www.adicel.com.br/acucares-e-dextrinas"
+        ]
+    }
+}
